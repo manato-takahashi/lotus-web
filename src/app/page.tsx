@@ -12,6 +12,9 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import {
+  Card
+} from "@/components/ui/card"
 
 export default function Home() {
   const { setTheme } = useTheme()
@@ -41,11 +44,24 @@ export default function Home() {
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
-      <div>
+      <div style={{ display: 'flex', justifyContent: 'center', padding: '1rem' }}>
         <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-center">
         Welcome to Lotus web
-      </h1> 
+        </h1>
       </div>
+      <Card className="w-[150px] ml-80 p-2 flex justify-start">
+        <ul>
+          <li>
+            <Button variant="ghost">About</Button>
+          </li>
+          <li>
+            <Button variant="ghost">Achievement</Button>
+          </li>
+          <li>
+            <Button variant="ghost">Member</Button>
+          </li>
+        </ul>
+      </Card>
     </div>
     </>
   );
