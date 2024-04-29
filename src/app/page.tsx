@@ -62,6 +62,15 @@ export default function Home() {
           </li>
         </ul>
       </Card>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <Image
+          src="/lotus.png"
+          alt="Lotus"
+          width={500}
+          height={500}
+          className="rounded-full"
+        />
+      </div>
     </div>
     </>
   );
